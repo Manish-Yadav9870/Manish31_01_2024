@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .parent_container{
+            border: 1px solid gray;
+            display: grid;
+            background-color: aqua;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            padding: 10px;
+           
+        }
+        .item{
+            /* border: 1px solid salmon; */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 800;
+            background-color: bisque; 
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            border-radius: 5px 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: grid;
+            grid-template-rows: minmax(100px,auto);
+        }
+        .parent_container :nth-last-child(1),
+        .parent_container :nth-last-child(2){
+            grid-column: span 2;
+        }
+        @media screen and (min-width:100px) and (max-width:400px) {
+            .parent_container{
+            border: 1px solid gray;
+            display: grid;
+            background-color: rgb(236, 88, 150);
+            grid-template-columns: repeat(1,1fr);
+           
+        }
+        .item{
+            /* border: 1px solid salmon; */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 800;
+            background-color: rgb(37, 224, 37); 
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            border-radius: 5px 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: grid;
+            grid-template-rows: minmax(100px,auto);}
+            .parent_container :nth-last-child(1),
+        .parent_container :nth-last-child(2){
+            grid-column: span 1;}
+        }
+        @media screen and (min-width:401px) and (max-width:768px) {
+            .parent_container{
+            border: 1px solid gray;
+            display: grid;
+            background-color: rgb(226, 238, 238);
+            grid-template-columns: repeat(2,1fr);
+           
+        }
+        .item{
+            /* border: 1px solid salmon; */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 800;
+            background-color: rgb(238, 114, 12); 
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            border-radius: 5px 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: grid;
+            grid-template-rows: minmax(100px,auto);}
+            .parent_container :nth-last-child(1),
+        .parent_container :nth-last-child(2){
+            grid-column: span 1;}
+        }
+    </style>
+</head>
+<body>
+    <div class="parent_container">
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+    <div class="item">item 4</div>
+    <div class="item">item 5</div>
+    <div class="item">item 6</div>
+    <div class="item">item 7</div>
+    <div class="item">item 8</div>
+    <div class="item">item 9</div>
+    <div class="item">item 10</div>
+    <div class="item">item 11</div>
+    <div class="item">item 12</div>
+    <div class="item">item 13</div>
+    <div class="item">item 14</div>
+</div>
+</body>
+</html>
